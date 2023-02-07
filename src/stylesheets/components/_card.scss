@@ -7,18 +7,19 @@
     display: block;
     margin-bottom: 1rem;
   }
+  &__description,
+  &__author {
+    color: #fff;
+    margin-left: 1rem;
+    position: absolute;
+  }
   &__description {
     bottom: 3rem;
-    color: #fff;
-    position: absolute;
     font-size: 1.2rem;
   }
-
   &__author {
     bottom: 1rem;
     font-size: 0.9rem;
-    color: #fff;
-    position: absolute;
     font-weight: normal;
   }
 }

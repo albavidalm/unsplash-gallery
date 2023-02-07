@@ -1,4 +1,7 @@
 .gallery {
-  columns: 3 3rem;
+  columns: 1 3rem;
   column-gap: 1rem;
+  @include tablet {
+    columns: 3 6em;
+  }
 }

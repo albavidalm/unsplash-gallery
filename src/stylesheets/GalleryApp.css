@@ -389,10 +389,17 @@ template {
 }
 
 .gallery {
-  -webkit-columns: 3 3rem;
-          columns: 3 3rem;
+  -webkit-columns: 1 3rem;
+          columns: 1 3rem;
   -webkit-column-gap: 1rem;
           column-gap: 1rem;
+}
+
+@media all and (min-width: 768px) {
+  .gallery {
+    -webkit-columns: 3 6em;
+            columns: 3 6em;
+  }
 }
 
 .card {
@@ -406,18 +413,20 @@ template {
   margin-bottom: 1rem;
 }
 
+.card__description, .card__author {
+  color: #fff;
+  margin-left: 1rem;
+  position: absolute;
+}
+
 .card__description {
   bottom: 3rem;
-  color: #fff;
-  position: absolute;
   font-size: 1.2rem;
 }
 
 .card__author {
   bottom: 1rem;
   font-size: 0.9rem;
-  color: #fff;
-  position: absolute;
   font-weight: normal;
 }
 
