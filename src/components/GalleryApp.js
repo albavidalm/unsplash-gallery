@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import getApiData from "./services/getApiData";
 import Header from "./Header";
 import Gallery from "./Gallery";
+import Footer from "./Footer";
 
 const GalleryApp = () => {
   const [infoPhoto, setInfoPhoto] = useState([]);
@@ -18,6 +19,7 @@ const GalleryApp = () => {
     <>
       <Header />
       <Gallery infoPhoto={infoPhoto} />
+      <Footer />
     </>
   );
 };

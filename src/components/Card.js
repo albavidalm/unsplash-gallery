@@ -8,8 +8,8 @@ const Card = ({ infoPhoto }) => {
             src={photo.imgUrl}
             alt={photo.imgDescription}
           ></img>
-          <h2 className="card__description">{photo.imgDescription}</h2>
-          <h2 className="card__author">{photo.author}</h2>
+          <h2 className="card__description wrapper">{photo.imgDescription}</h2>
+          <h2 className="card__author wrapper">{photo.author}</h2>
         </li>
       );
     });

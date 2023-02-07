@@ -1,0 +1,30 @@
+.footer {
+  align-items: baseline;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: 0;
+  color: rgb(135, 135, 135);
+  display: flex;
+  font-weight: lighter;
+  height: 2rem;
+  justify-content: center;
+  margin-left: -16px;
+  position: fixed;
+  width: 100vw;
+  &__author {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 2rem;
+    margin: 0;
+    padding-right: 1rem;
+  }
+  &__link,
+  &__link:visited {
+    color: rgb(135, 135, 135);
+    padding-right: 1rem;
+    &:hover {
+      color: rgb(143, 143, 143);
+      transform: scale(1.4);
+      transition: all 0.4s ease;
+    }
+  }
+}
