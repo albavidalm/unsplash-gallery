@@ -4,7 +4,7 @@ import Card from "./Card";
 export default function Gallery({ infoPhoto }) {
   return (
     <section>
-      <ul className="gallery">
+      <ul className="gallery wrapper">
         <Card infoPhoto={infoPhoto} />
       </ul>
     </section>

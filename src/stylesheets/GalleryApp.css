@@ -365,6 +365,29 @@ template {
   display: none;
 }
 
+.wrapper {
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+@media all and (min-width: 1440px) {
+  .wrapper {
+    padding: 0.5rem 10rem 0 10rem;
+  }
+}
+
+.header__title {
+  display: none;
+}
+
+.header__btn {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid black;
+  height: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
 .gallery {
   -webkit-columns: 3 3rem;
           columns: 3 3rem;
