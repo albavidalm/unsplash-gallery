@@ -1,5 +1,4 @@
 const Header = ({ handleClick, disabledButton }) => {
-  console.log(disabledButton);
   return (
     <section className="header wrapper">
       <h1 className="header__title">Unsplash Gallery</h1>

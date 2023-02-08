@@ -33,7 +33,11 @@ const GalleryApp = () => {
 
   return (
     <>
-      <Header handleClick={handleClick} disabledButton={disabledButton} />
+      <Header
+        handleClick={handleClick}
+        disabledButton={disabledButton}
+        randomPage={randomPage(2, 10)}
+      />
       <Gallery infoPhoto={infoPhoto} />
       <Footer />
     </>

@@ -1,5 +1,5 @@
+import apiKey from "./apikey";
 const getApiData = (page) => {
-  const apiKey = "NDmA0Jtl_iAxlQ_3_9Np7D-29kJmftTNRAUV4ZIQcAM";
   return fetch(
     `https://api.unsplash.com/photos?client_id=${apiKey}&per_page=13&page=${page}`
   )

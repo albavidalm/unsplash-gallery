@@ -94,3 +94,5 @@ lint/tmp/
 .vscode
 node_modules
 
+apikey.js
+
