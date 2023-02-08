@@ -1,6 +1,7 @@
-const getApiData = () => {
+const getApiData = (page) => {
+  const apiKey = "NDmA0Jtl_iAxlQ_3_9Np7D-29kJmftTNRAUV4ZIQcAM";
   return fetch(
-    "https://api.unsplash.com/photos?client_id=NDmA0Jtl_iAxlQ_3_9Np7D-29kJmftTNRAUV4ZIQcAM"
+    `https://api.unsplash.com/photos?client_id=${apiKey}&per_page=13&page=${page}`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -15,7 +16,7 @@ const getApiData = () => {
           author: photo.user.name,
         };
       });
-      //console.log(cleanData);
+
       return cleanData;
     })
     .catch((err) => console.error(err));
